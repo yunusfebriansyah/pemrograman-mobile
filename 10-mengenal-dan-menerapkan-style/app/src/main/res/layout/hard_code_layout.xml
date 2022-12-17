@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/container_padding_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:layout_marginTop="@dimen/margin_top_first_element"
+        android:textColor="@color/black"/>
+
+    <Button
+        style="@style/button_oke"/>
+
+    <Button
+        style="@style/button_download"/>
+
+    <Button
+        style="@style/button_download"/>
+
+</LinearLayout>
