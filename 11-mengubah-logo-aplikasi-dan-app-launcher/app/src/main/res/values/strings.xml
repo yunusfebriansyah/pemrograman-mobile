@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Belajar Pemrograman Mobile</string>
+
+    <!-- Customize String Value -->
+    <string name="hello_world">Hello World!!</string>
+    <string name="button_oke">Oke</string>
+    <string name="button_download">Download</string>
+
+</resources>
