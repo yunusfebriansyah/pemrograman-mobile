@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/container_padding_horizontal">
+
+    <TextView
+        style="@style/label"
+        android:layout_marginTop="@dimen/margin_top_first_element"
+        android:text="Pembahasan Intent"/>
+
+    <Button
+        android:id="@+id/btn_intent"
+        style="@style/button"
+        android:text="Menuju Pembahasan Intent"/>
+
+</LinearLayout>
