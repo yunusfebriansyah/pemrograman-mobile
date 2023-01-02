@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity"
+    android:paddingHorizontal="@dimen/container_padding_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/label"
+            android:layout_marginTop="@dimen/margin_top_first_element"
+            android:text="Pembahasan Relative Layout"/>
+
+        <Button
+            android:id="@+id/button_1"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:text="Button 1"
+            android:layout_below="@+id/label"/>
+
+        <Button
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/container_padding_horizontal"
+            android:text="Button 2" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

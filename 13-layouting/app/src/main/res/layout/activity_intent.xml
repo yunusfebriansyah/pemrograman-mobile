@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentActivity"
+    android:paddingHorizontal="@dimen/container_padding_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/label"
+        android:layout_marginTop="@dimen/margin_top_first_element"
+        android:text="Exspicit Intent"/>
+
+    <TextView
+        style="@style/label"
+        android:layout_marginTop="@dimen/margin_top_first_element"
+        android:text="contohnya sudah kita lakukan saat menuju ke halaman ini."/>
+
+
+    <View
+        style="@style/divider" />
+
+    <TextView
+        style="@style/label"
+        android:layout_marginTop="@dimen/margin_top_first_element"
+        android:text="Implicit Intent"/>
+
+    <Button
+        android:id="@+id/btn_link"
+        style="@style/button"
+        android:text="Menuju Youtube SWS"/>
+
+    <View
+        style="@style/divider"/>
+
+    <Button
+        android:id="@+id/btn_dial_number"
+        style="@style/button"
+        android:text="Menuju ke Dial Number"/>
+
+
+
+</LinearLayout>
