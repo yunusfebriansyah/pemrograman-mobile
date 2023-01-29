@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AndroidComponentsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none"
+        android:paddingHorizontal="@dimen/container_padding_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/container_padding_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Masukan Nama"
+                android:layout_marginTop="@dimen/margin_top_first_element"/>
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama anda"
+                android:inputType="text"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Hobi kamu"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <CheckBox
+                android:id="@+id/cb_mancing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mancing"/>
+
+            <CheckBox
+                android:id="@+id/cb_ngoding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngoding"/>
+
+            <CheckBox
+                android:id="@+id/cb_rebahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rebahan"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Udah makan belum?"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <ToggleButton
+                android:id="@+id/tg_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Belum"
+                android:textOn="Sudah"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Masih jomblo?"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <Switch
+                android:id="@+id/sw_is_jomblo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Suka Ketoprak?"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <RadioGroup
+                android:id="@+id/rg_ketoprak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_suka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suka"/>
+
+                <RadioButton
+                    android:id="@+id/rb_lumayan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lumayan"/>
+
+                <RadioButton
+                    android:id="@+id/rb_tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/label"
+                android:text="Suka Jalan-jalan?"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <Spinner
+                android:id="@+id/sp_jalan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Biasanya tidur jam berapa?"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <TimePicker
+                android:id="@+id/tp_tidur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"/>
+
+            <TextView
+                style="@style/label"
+                android:text="Tanggal favoritmu?"
+                android:layout_marginTop="@dimen/margin_top_element"/>
+
+            <DatePicker
+                android:id="@+id/dp_time_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/button"
+                android:text="Submit"/>
+
+            <View
+                style="@style/divider"/>
+
+            <TextView
+                android:id="@+id/txt_result"
+                style="@style/label"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
